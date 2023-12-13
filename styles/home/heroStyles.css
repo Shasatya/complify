@@ -1,0 +1,73 @@
+@import url("../commonStyles.css");
+
+.hero {
+    height: 60vh;
+    background-image: url("./assets/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-color: var(--dark-green);
+}
+
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-elements {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-elements li {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-elements li a {
+    color: #fff;
+}
+
+#col {
+    border: 1px solid var(--light-green);
+}
+
+#col a {
+    color: var(--light-green);
+}
+
+.hero-body {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    width: 20%;
+    color: #fff;
+}
+
+.hero-body button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--light-green);
+    color: var(--light-green);
+    background: none;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hero-body button a {
+    color: var(--light-green);
+}

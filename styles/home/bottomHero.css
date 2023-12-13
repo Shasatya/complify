@@ -1,0 +1,98 @@
+@import url("../commonStyles.css");
+
+.bottom-hero {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 53rem;
+}
+
+.bottom-hero .contact {
+    width: 25rem;
+    height: 20rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: var(--light-blue);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.about h3,
+.contact h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem auto;
+    color: var(--light-green);
+}
+
+.contact-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-options a {
+    background-color: var(--dark-green);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.contact-options svg {
+    height: 5rem;
+    width: 5rem;
+    fill: var(--white);
+    transition: 0.3s ease;
+}
+
+svg:hover {
+    fill: var(--light-green);
+}
+
+.bottom-hero .about {
+    width: 25rem;
+    height: 90%;
+    background-color: var(--light-blue);
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.about p {
+    color: var(--white);
+    line-height: 140%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.head h5 {
+    color: var(--light-green);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.sub-head {
+    color: var(--white);
+    font-weight: bold;
+}
+
+@media (width<820px) {
+    .bottom-hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+        height: 73rem;
+        padding: 2rem 0;
+    }
+
+    .bottom-hero .contact {
+        padding-bottom: 1rem;
+    }
+
+    .bottom-hero .contact,
+    .bottom-hero .about {
+        border-radius: 5px;
+    }
+}

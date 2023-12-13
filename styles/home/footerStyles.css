@@ -1,0 +1,36 @@
+@import url("../commonStyles.css");
+
+.footer {
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4%;
+}
+
+.footer a,
+p {
+    color: var(--white);
+}
+
+.footer button {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: 1px solid var(--light-green);
+}
+
+.footer button svg {
+    fill: var(--light-green);
+    height: 2rem;
+    width: 1.2rem;
+}
+
+@media (width<500px) {
+    .footer-links {
+        display: none;
+    }
+}
