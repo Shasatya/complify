@@ -12,6 +12,7 @@
 
     --black: #000;
     --white: #fff;
+    --gray: #586871
 }
 
 * {
@@ -21,6 +22,11 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Space Grotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
 }
 
 body {

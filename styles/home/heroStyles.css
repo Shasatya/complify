@@ -17,7 +17,7 @@
 }
 
 .logo a {
-    color: #fff;
+    color: var(--white);
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -30,14 +30,13 @@
 .nav-elements li {
     padding: 0.4rem 0.8rem;
     border-radius: 0.8rem;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     font-size: 1rem;
     font-weight: 400;
-    cursor: pointer;
 }
 
 .nav-elements li a {
-    color: #fff;
+    color: var(--white);
 }
 
 #col {
@@ -53,7 +52,7 @@
     top: 30%;
     right: 10px;
     width: 20%;
-    color: #fff;
+    color: var(--white);
 }
 
 .hero-body button {
@@ -64,8 +63,8 @@
     background: none;
     font-size: 1rem;
     font-weight: 400;
-    cursor: pointer;
     margin-top: 10px;
+    transition: 0.3s ease;
 }
 
 .hero-body button a {

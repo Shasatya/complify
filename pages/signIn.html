@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/formStyles.css">
-    <title>Complify-Sign In</title>
+    <title>Complify | Sign In</title>
 </head>
 
 <body>
-    <div class="form-body">
-        <h1>Login</h1>
-        <form method="post">
-            <div class="txt_field">
-                <input type="text" required />
-                <span></span>
+    <div class="form">
+        <h1>Sign In</h1>
+        <form method="post" class="form-body">
+            <div class="text-field">
                 <label>Username</label>
-            </div>
-            <div class="txt_field">
-                <input type="password" required />
                 <span></span>
-                <label>Password</label>
+                <input type="text" placeholder="Email address" required />
             </div>
-            <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Login" />
-            <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+            <div class="text-field">
+                <label>Password</label>
+                <span></span>
+                <input type="password" placeholder="Password" required />
+            </div>
+            <button>Sign In</button>
+            <p>Forgot Password?</p>
         </form>
     </div>
 </body>

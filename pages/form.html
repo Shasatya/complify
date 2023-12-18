@@ -4,11 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/formStyles.css">
+    <title>Complify | Complaint</title>
 </head>
 
 <body>
-    <h1>form</h1>
+    <div class="form">
+        <h1>Write Complaint</h1>
+        <form method="post" class="form-body">
+            <div class="text-field">
+                <label>Username</label>
+                <span></span>
+                <input type="text" placeholder="Username" required />
+            </div>
+            <div class="text-field">
+                <label>Email</label>
+                <span></span>
+                <input type="email" placeholder="Email address" required />
+            </div>
+            <div class="text-field">
+                <label>Password</label>
+                <span></span>
+                <input type="password" placeholder="Create password" required />
+            </div>
+            <button>Submit </button>
+        </form>
+    </div>
 </body>
 
 </html>

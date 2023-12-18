@@ -29,6 +29,7 @@ p {
     width: 1.2rem;
 }
 
+
 @media (width<500px) {
     .footer-links {
         display: none;
