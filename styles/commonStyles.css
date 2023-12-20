@@ -12,7 +12,8 @@
 
     --black: #000;
     --white: #fff;
-    --gray: #586871
+    --gray: #586871;
+    --grey: #757575
 }
 
 * {
@@ -26,11 +27,11 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
+    /* scroll-padding-top: 10rem; */
 }
 
 body {
-    scroll-behavior: smooth;
+        overflow-x: hidden;
 }
 
 h2 {

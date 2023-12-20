@@ -37,15 +37,82 @@ body {
     margin-bottom: 0.3rem;
 }
 
-.text-field input {
+.drop-down,
+.text-field input,
+textarea {
     padding: 0.6rem;
     font-weight: 600;
     font-size: 1.1rem;
     border-radius: 5px;
     border: none;
     outline: none;
-    color: var(--gray);
+    color: var(--grey);
     background-color: var(--light-blue);
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: var(--light-green);
+    border-radius: 5px;
+}
+
+.text-field input[type="file"] {
+    padding: 0.6rem 0.2rem;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+input::file-selector-button {
+    color: var(--light-green);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.drop-down-content {
+    height: 110px;
+    width: 92%;
+    overflow-y: auto;
+    margin-top: 0.2rem;
+    position: absolute;
+    top: 25%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: var(--grey);
+    background-color: var(--light-blue);
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.drop-down-content li {
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 3px 0;
+}
+
+.drop-down-content li:hover {
+    background-color: var(--dark-green);
+}
+
+.drop-down-content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.drop-down-content::-webkit-scrollbar-thumb {
+    background-color: var(--light-green);
+    border-radius: 5px;
 }
 
 .form-body button {

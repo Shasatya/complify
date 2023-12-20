@@ -13,23 +13,60 @@
         <h1>Write Complaint</h1>
         <form method="post" class="form-body">
             <div class="text-field">
-                <label>Username</label>
-                <span></span>
-                <input type="text" placeholder="Username" required />
+                <label>Service Provider</label>
+                <div class="drop-down" onclick="dropDownDisplay()">
+                    <li id="placeHolder">Select the Service Provider</li>
+                </div>
+                <div class="drop-down-content" id="drop-down-content">
+                    <li>Brand 1</li>
+                    <li>Brand 2</li>
+                    <li>Brand 3</li>
+                    <li>Brand 4</li>
+                    <li>Brand 5</li>
+                    <li>Brand 6</li>
+                    <li>Brand 7</li>
+                    <li>Brand 8</li>
+                    <li>Brand 9</li>
+                    <li>Brand 10</li>
+                    <li>Brand 11</li>
+                    <li>Brand 12</li>
+                    <li>Brand 13</li>
+                    <li>Brand 14</li>
+                </div>
             </div>
             <div class="text-field">
-                <label>Email</label>
-                <span></span>
-                <input type="email" placeholder="Email address" required />
+                <label>Service</label>
+                <input type="text" placeholder="Specify the type of service" required />
             </div>
             <div class="text-field">
-                <label>Password</label>
-                <span></span>
-                <input type="password" placeholder="Create password" required />
+                <label>Enter Unique ID</label>
+                <input type="text" placeholder="ID provided to you" required />
+            </div>
+            <div class="text-field">
+                <label>Specify about the issue</label>
+                <textarea placeholder="Elaborate your issue"></textarea>
+            </div>
+            <div class="text-field">
+                <label>Add File/Image (optional)</label>
+                <input type="file" />
             </div>
             <button>Submit </button>
         </form>
     </div>
+    <script>
+        const dropDownContent = document.getElementById("drop-down-content")
+        const dropDownDisplay = () => {
+            dropDownContent.classList.toggle("active")
+        }
+        const placeHolder = document.getElementById("placeHolder")
+        const dropDownList = document.querySelectorAll(".drop-down-content li")
+        dropDownList.forEach((entry) => {
+            entry.addEventListener("click", () => {
+                placeHolder.innerHTML = entry.textContent;
+                dropDownContent.classList.remove("active")
+            })
+        })
+    </script>
 </body>
 
 </html>

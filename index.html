@@ -21,15 +21,24 @@
             <div class="navbar">
                 <div class="logo"><a href="./index.html">Complify</a></div>
                 <div class="nav-elements">
-                    <li><a href="./pages/signIn.html">Sign In</a></li>
-                    <li id="col"><a href="./pages/signUp.html">Sign Up</a></li>
+                    <a href="./pages/signIn.html">Sign In</a>
+                    <a id="col" href="./pages/signUp.html">Sign Up</a>
                 </div>
             </div>
+            <div class="blob">
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
             <div class="hero-body">
-                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis enim hic sapiente quasi fuga
-                    eius maiores, aliquam consectetur nesciunt aliquid.</p>
-                <button><a href="./pages/form.html">Address</a></button>
+                <h1>Your Concerns, Our Priority</h1>
+                <p>Empower yourself to initiate positive change , file a complaint, and let us guide you toward
+                    resolution. </p>
+                <br>
+                <a href="./pages/form.html">Address</a>
             </div>
         </div>
 
@@ -123,19 +132,6 @@
                     <p>Brands <br> Collaborated</p>
                 </section>
             </div>
-
-            <h2>Associated Brands</h2>
-            <div class="achievements">
-                <section>
-                    <h3>Complaints <br> Registered</h3>
-                </section>
-                <section>
-                    <h3>Total <br> Users</h3>
-                </section>
-                <section>
-                    <h3>Brands <br> Collaborated</h3>
-                </section>
-            </div>
         </div>
 
         <div class="bottom-hero">
@@ -225,13 +221,13 @@
         </div>
 
         <footer class="footer">
-            <div class="logo"><a href="./index.html">Complify</a>
+            <div class="foot-logo"><a href="./index.html">Complify</a>
                 <p>&copy; <span id="year"></span></p>
             </div>
 
-            <a href="./pages/form.html">Write a Complaint</a>
-            <a class="footer-links" href="./pages/signIn.html"> Sign In</a>
-            <a class="footer-links" href="./pages/signUp.html"> Sign Up</a>
+            <a class="footer-links" href="./pages/form.html">Write a Complaint</a>
+            <a class="footer-links inv" href="./pages/signIn.html"> Sign In</a>
+            <a class="footer-links inv" href="./pages/signUp.html"> Sign Up</a>
 
             <button id="topbtn">
                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
@@ -241,26 +237,11 @@
             </button>
         </footer>
 
-
-
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide');
-            splide.mount();
-        });
-
-        const d = new Date();
-        let year = d.getFullYear();
-        document.getElementById("year").innerHTML = year;
-
-        document.getElementById("topbtn").addEventListener("click", () => {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        })
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
