@@ -2,48 +2,48 @@
 
 ## /_ Define the scrollbar style _/
 
-## .container::-webkit-scrollbar {
+.container::-webkit-scrollbar {
 
-## width: 10px;
+width: 10px;
 
-## height: 10px;
+height: 10px;
 
-## }
+}
 
 ## /_ Define the thumb style _/
 
-## .container::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
 
-## background: linear-gradient(to bottom right, #4d7fff 0%, #1a56ff 100%);
+background: linear-gradient(to bottom right, #4d7fff 0%, #1a56ff 100%);
 
-## border-radius: 5px;
+border-radius: 5px;
 
-## }
+}
 
 ## /_ Define the track style _/
 
-## .container::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
 
-## background-color: #ddd;
+background-color: #ddd;
 
-## border: 1px solid #ccc;
+border: 1px solid #ccc;
 
-## }
+}
 
 ## /_ Define the button style _/
 
-## .container::-webkit-scrollbar-button {
+.container::-webkit-scrollbar-button {
 
-## background-color: #4d7fff;
+background-color: #4d7fff;
 
-## border-radius: 5px;
+border-radius: 5px;
 
-## }
+}
 
 ## /_ Define the button style when being hovered over _/
 
-## .container::-webkit-scrollbar-button:hover {
+.container::-webkit-scrollbar-button:hover {
 
-## background-color: #999999;
+background-color: #999999;
 
-## }
+}
