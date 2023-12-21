@@ -49,3 +49,10 @@
 .review p {
     color: var(--white);
 }
+
+@media (width<360px) {
+    .splide {
+        border-radius: 0px;
+        min-width: 100%;
+    }
+}

@@ -77,6 +77,8 @@ TweenMax.from(".hero-body", 1, {
 //     y: 40,
 //     ease: Expo.easeInOut
 // }, 0.2)
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide");
   splide.mount();
