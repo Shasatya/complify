@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 53rem;
+    height: 54rem;
 }
 
 .bottom-hero .contact {
@@ -56,7 +56,7 @@ svg:hover {
     background-color: var(--light-blue);
     margin-top: auto;
     margin-bottom: auto;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     border-radius: 1rem 0 0 1rem;
 }
 
@@ -98,20 +98,21 @@ svg:hover {
 }
 
 @media (width<400px) {
-    .bottom-hero {
-        height: 83rem;
-    }
 
     .bottom-hero .about {
         width: 100%;
-        height: 100%;
+    }
+
+    .about p {
+        line-height: 120%;
+        word-spacing: 1px;
     }
 
     .bottom-hero .contact {
         width: 100%;
     }
 
-    .contact-options svg{
+    .contact-options svg {
         height: 4rem;
         width: 4rem;
     }
