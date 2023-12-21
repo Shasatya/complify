@@ -156,11 +156,20 @@
     }
 }
 
-@media (width<500px) {
+@media (width<550px) {
     .hero-body {
         width: 100%;
         padding: 1rem;
         top: 36%;
+    }
+
+    .blob {
+        top: 36%;
+    }
+
+    .square {
+        height: 260px;
+        width: 260px;
     }
 
     .hero-body a {
