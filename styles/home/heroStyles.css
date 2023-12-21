@@ -146,6 +146,18 @@
     }
 }
 
+@media (width<980px) {
+    .hero-body a {
+        border: 1px solid var(--white);
+        color: var(--white);
+        padding: 0.4rem;
+        border-radius: 0.6rem;
+        font-size: 0.8rem;
+        font-weight: 200;
+        transition: 0.3s ease;
+    }
+}
+
 @media (width<400px) {
     .nav-elements a {
         padding: 0.4rem;
@@ -170,16 +182,6 @@
     .square {
         height: 260px;
         width: 260px;
-    }
-
-    .hero-body a {
-        border: 1px solid var(--white);
-        color: var(--white);
-        padding: 0.4rem;
-        border-radius: 0.6rem;
-        font-size: 0.8rem;
-        font-weight: 200;
-        transition: 0.3s ease;
     }
 
     .square span:nth-child(1),
